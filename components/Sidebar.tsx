@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Sidebar() {
     return (
-        <aside className="w-64 h-screen bg-gray-900 text-white p-4 flex flex-col">
+        <aside className="w-[280px] h-screen bg-gray-900 text-white p-4 flex flex-col">
             <h1 className="text-xl font-bold flex items-center gap-2">
                 <span className="text-yellow-500">⚡</span> Socrates
             </h1>
