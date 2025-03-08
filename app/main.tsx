@@ -344,7 +344,7 @@ export default function Main() {
                                         color: "white"
                                     }}
                                 >
-                                    Deep Dive processes documents section by section for "unlimited" context, enabling complete answers. Run once per chat to unlock Table AI and Prompt Loops
+                                    Deep Dive processes documents section by section for &quot;unlimited&quot; context, enabling complete answers. Run once per chat to unlock Table AI and Prompt Loops
                                 </span>
                             </div>
                         )}
