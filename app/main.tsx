@@ -78,39 +78,79 @@ export default function Main() {
                         gap: "8px", // Reduce gap to 8px
                         display: "flex", // Ensure flex display to align text and image
                         alignItems: "center", // Center items vertically
-                        justifyContent: "center" // Center items horizontally
+                        justifyContent: "center", // Center items horizontally
+                        flexDirection: "column" // Add this to stack the text vertically
                     }}
                 >
-                    <span
+                    <div
                         style={{
-                            fontFamily: "Onest",
-                            fontWeight: 500,
-                            fontSize: "54px",
-                            lineHeight: "100%",
-                            letterSpacing: "-3%",
-                            textAlign: "center",
-                            verticalAlign: "middle",
-                            color: "white"
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: "8px" // Reduce gap to 8px
                         }}
                     >
-                        Add Files to
-                    </span>
-                    <img src="/app_icon.png" alt="Cloud Icon" style={{ width: "114px", height: "114px", }} />
-                    <span
+                        <span
+                            style={{
+                                fontFamily: "Onest",
+                                fontWeight: 500,
+                                fontSize: "54px",
+                                lineHeight: "100%",
+                                letterSpacing: "-3%",
+                                textAlign: "center",
+                                verticalAlign: "middle",
+                                color: "white"
+                            }}
+                        >
+                            Add Files to
+                        </span>
+                        <img src="/app_icon.png" alt="Cloud Icon" style={{ width: "114px", height: "114px", }} />
+                        <span
+                            style={{
+                                fontFamily: "Onest",
+                                fontWeight: 500,
+                                fontSize: "54px",
+                                lineHeight: "100%",
+                                letterSpacing: "-3%",
+                                textAlign: "center",
+                                verticalAlign: "middle",
+                                color: "white",
+                                // Optional: Add some space between the image and text
+                            }}
+                        >
+                            Cloud Chat
+                        </span>
+                    </div>
+                    <div
                         style={{
                             fontFamily: "Onest",
-                            fontWeight: 500,
-                            fontSize: "54px",
-                            lineHeight: "100%",
-                            letterSpacing: "-3%",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            lineHeight: "130%",
+                            letterSpacing: "1%",
                             textAlign: "center",
                             verticalAlign: "middle",
                             color: "white",
-                            // Optional: Add some space between the image and text
+                            // marginTop: "16px" // Optional: Add some space between the existing content and new text
                         }}
                     >
-                        Cloud Chat
-                    </span>
+                        Your files will not be stored on our servers and no AI models will be trained.
+                    </div>
+                    <div
+                        style={{
+                            fontFamily: "Onest",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            lineHeight: "130%",
+                            letterSpacing: "1%",
+                            textAlign: "center",
+                            verticalAlign: "middle",
+                            color: "#F37F0C", // Set text color to #F37F0C
+                            // marginTop: "8px" // Optional: Add some space between the existing text and new text
+                        }}
+                    >
+                        Supported File Types: .docx, .pdf, .epub, and many text filetypes
+                    </div>
                 </div>
             </div>
         </main>

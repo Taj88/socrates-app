@@ -7,6 +7,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-onest: var(--font-onest);
+  /* Add Onest font */
+  --font-open-sans: var(--font-open-sans);
+  /* Add Open Sans font */
 }
 
 @layer base {
