@@ -61,6 +61,58 @@ export default function Main() {
                     install the app.
                 </span>
             </div>
+            <div
+                id="headline"
+                style={{
+                    width: "1076px",
+                    height: "624px",
+                    gap: "60px",
+                    marginTop: "60px" // Apply 60px margin on top
+                }}
+            >
+                <div
+                    id="text"
+                    style={{
+                        width: "1076px",
+                        height: "114px",
+                        gap: "8px", // Reduce gap to 8px
+                        display: "flex", // Ensure flex display to align text and image
+                        alignItems: "center", // Center items vertically
+                        justifyContent: "center" // Center items horizontally
+                    }}
+                >
+                    <span
+                        style={{
+                            fontFamily: "Onest",
+                            fontWeight: 500,
+                            fontSize: "54px",
+                            lineHeight: "100%",
+                            letterSpacing: "-3%",
+                            textAlign: "center",
+                            verticalAlign: "middle",
+                            color: "white"
+                        }}
+                    >
+                        Add Files to
+                    </span>
+                    <img src="/app_icon.png" alt="Cloud Icon" style={{ width: "114px", height: "114px", }} />
+                    <span
+                        style={{
+                            fontFamily: "Onest",
+                            fontWeight: 500,
+                            fontSize: "54px",
+                            lineHeight: "100%",
+                            letterSpacing: "-3%",
+                            textAlign: "center",
+                            verticalAlign: "middle",
+                            color: "white",
+                            // Optional: Add some space between the image and text
+                        }}
+                    >
+                        Cloud Chat
+                    </span>
+                </div>
+            </div>
         </main>
     );
 }
