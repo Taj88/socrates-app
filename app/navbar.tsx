@@ -6,6 +6,8 @@ import buttonsIcon from '../public/Buttons.svg';
 import buttonsIcon1 from '../public/Buttons1.svg';
 import buttonsUpgradeIcon from '../public/Buttons_upgrade.svg';
 import flowIcon from '../public/icon=flow.svg';
+import avatarIcon from '../public/avatar.png';
+import settingsIcon from '../public/settings.png';
 
 export default function Navbar() {
     return (
@@ -56,8 +58,28 @@ export default function Navbar() {
                     }}
                     id="buttons_div"
                 >
-                    <Image src={buttonsIcon} alt="Buttons Icon" width={256} height={40} />
-                    <Image src={buttonsIcon1} alt="Buttons1 Icon" width={256} height={40} />
+                    <button
+                        style={{
+                            width: "256px",
+                            height: "40px",
+                            border: "none",
+                            background: "none",
+                            cursor: "pointer",
+                        }}
+                    >
+                        <Image src={buttonsIcon} alt="Buttons Icon" width={256} height={40} />
+                    </button>
+                    <button
+                        style={{
+                            width: "256px",
+                            height: "40px",
+                            border: "none",
+                            background: "none",
+                            cursor: "pointer",
+                        }}
+                    >
+                        <Image src={buttonsIcon1} alt="Buttons1 Icon" width={256} height={40} />
+                    </button>
                 </div>
             </div>
             <div className="flex-1"></div> {/* Spacer div to push Bottom_nav lower */}
@@ -152,7 +174,7 @@ export default function Navbar() {
                             justifyContent: "center",
                         }}
                     >
-                        <Image src={flowIcon} alt="Flow Icon" width={20} height={20} />
+                        <Image src={flowIcon} alt="Flow Icon" width={24} height={24} />
                     </button>
                     <span
                         style={{
@@ -168,6 +190,68 @@ export default function Navbar() {
                     >
                         Flow AI Templates
                     </span>
+                </div>
+                <div
+                    style={{
+                        width: "256px",
+                        height: "40px",
+                        gap: "8px",
+                        paddingTop: "2px",
+                        paddingBottom: "2px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between", // Add this to space out the elements
+                    }}
+                > {/* Create a 40px high div with 8px gap between children */}
+                    <button
+                        style={{
+                            width: "36px",
+                            height: "36px",
+                            borderRadius: "18px",
+                            padding: "12px",
+                            gap: "10px",
+                            backgroundColor: "#363636",
+                            color: "#ffffff",
+                            border: "none",
+                            cursor: "pointer",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Image src={avatarIcon} alt="Avatar Icon" width={36} height={36} />
+                    </button>
+                    <span
+                        style={{
+                            fontFamily: "Onest",
+                            fontWeight: 500,
+                            fontSize: "14px",
+                            lineHeight: "18px",
+                            letterSpacing: "0px",
+                            textAlign: "left", // Align text to the left
+                            verticalAlign: "middle",
+                            color: "white",
+                            marginLeft: "10px",
+                            flex: 1, // Add flex to push the text to the left
+                        }}
+                    >
+                        Jessica Mills
+                    </span>
+                    <button
+                        style={{
+                            width: "20px",
+                            height: "20px",
+                            borderRadius: "10px",
+                            backgroundColor: "transparent",
+                            border: "none",
+                            cursor: "pointer",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Image src={settingsIcon} alt="Settings Icon" width={20} height={20} />
+                    </button>
                 </div>
             </div>
         </nav>
