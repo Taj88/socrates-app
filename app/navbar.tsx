@@ -95,7 +95,7 @@ export default function Navbar() {
                             color: "white", // Set text color to white
                             display: "flex",
                             flexDirection: "column",
-                            gap: "4px", // Create a 4px gap between texts
+
                         }}
                     >
                         Upgrade to Premium
