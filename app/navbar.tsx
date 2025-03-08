@@ -107,7 +107,7 @@ export default function Navbar() {
                                 lineHeight: "120%",
                                 letterSpacing: "0%",
                                 verticalAlign: "middle",
-                                color: "#868686", // Set text color to #868686
+                                color: "#868686",
                             }}
                         >
                             Make the most of all features!
@@ -135,7 +135,7 @@ export default function Navbar() {
                         display: "flex",
                         alignItems: "center",
                     }}
-                >
+                > {/* Create a 40px high div with 8px gap between children */}
                     <button
                         style={{
                             width: "36px",
