@@ -1,13 +1,11 @@
-import Sidebar from "@/components/Sidebar";
-import FileUploader from "@/components/document";
+import Navbar from "./navbar";
+import Main from "./main";
 
 export default function Home() {
   return (
     <div className="flex h-screen bg-[#2B2B2B]">
-      <Sidebar />
-      <main className="flex-1 flex items-center justify-center">
-        <FileUploader />
-      </main>
+      <Navbar />
+      <Main />
     </div>
   );
 }
