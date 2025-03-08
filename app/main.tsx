@@ -9,6 +9,8 @@ export default function Main() {
                 padding: "16px",
                 gap: "12px",
                 backgroundColor: "#242424",
+                backgroundImage: "url('/HeroPattern.svg')", // Correct the path
+                backgroundSize: "cover" // Optional: Ensure the background image covers the entire area
             }}
         >
         </main>
