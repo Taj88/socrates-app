@@ -18,6 +18,7 @@ export default function Navbar() {
                 height: "868px",
                 borderRadius: "24px",
                 padding: "12px",
+                backgroundColor: "#242424", // Set background color to #242424
             }}
         >
             <div
