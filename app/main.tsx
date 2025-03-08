@@ -67,7 +67,7 @@ export default function Main() {
                     width: "1076px",
                     height: "624px",
                     gap: "60px",
-                    marginTop: "60px" // Apply 60px margin on top
+                    marginTop: "60px", // Apply 60px margin on top
                 }}
             >
                 <div
@@ -151,6 +151,78 @@ export default function Main() {
                     >
                         Supported File Types: .docx, .pdf, .epub, and many text filetypes
                     </div>
+                </div>
+                {/* Add the new div here */}
+                <div
+                    id="folders" // Name this div as folders
+                    style={{
+                        width: "820px",
+                        height: "330px",
+                        gap: "20px",
+                        marginTop: "90px", // Add 30px top margin
+                        display: "flex", // Ensure flex display to align text and image
+                        alignItems: "center", // Center items vertically
+                        justifyContent: "center", // Center items horizontally
+                        flexDirection: "column", // Add this to stack the text vertically
+                        marginLeft: "auto", // Center horizontally
+                        marginRight: "auto" // Center horizontally
+                    }}
+                >
+                    <div style={{ display: "flex", gap: "20px" }}>
+                        <div
+                            id="folder1"
+                            style={{
+                                width: "406px",
+                                height: "120px",
+                                borderRadius: "20px",
+                                gap: "6px",
+                                backgroundColor: "#242424"
+                            }}
+                        />
+                        <div
+                            id="folder2"
+                            style={{
+                                width: "406px",
+                                height: "120px",
+                                borderRadius: "20px",
+                                gap: "6px",
+                                backgroundColor: "#242424"
+                            }}
+                        />
+                    </div>
+                    <div style={{ display: "flex", gap: "20px" }}>
+                        <div
+                            id="folder3"
+                            style={{
+                                width: "406px",
+                                height: "120px",
+                                borderRadius: "20px",
+                                gap: "6px",
+                                backgroundColor: "#242424"
+                            }}
+                        />
+                        <div
+                            id="folder4"
+                            style={{
+                                width: "406px",
+                                height: "120px",
+                                borderRadius: "20px",
+                                gap: "6px",
+                                backgroundColor: "#242424"
+                            }}
+                        />
+                    </div>
+                    <div
+                        id="upload"
+                        style={{
+                            width: "820px",
+                            height: "62px",
+                            borderRadius: "34px",
+                            //padding: "16px",
+                            gap: "6px",
+                            backgroundColor: "#242424"
+                        }}
+                    />
                 </div>
             </div>
         </main>
