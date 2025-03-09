@@ -174,45 +174,118 @@ export default function Main() {
                         <div
                             id="folder1"
                             style={{
-                                width: "406px",
-                                height: "120px",
+                                width: "358px",
+                                height: "72px",
                                 borderRadius: "20px",
                                 gap: "6px",
-                                backgroundColor: "#242424"
+                                backgroundColor: "#242424",
+                                display: "flex",
+                                alignItems: "center",
+                                padding: "24px"
                             }}
-                        />
+                        >
+                            <img src="/folder1.svg" alt="Folder 1" style={{ width: "35px", height: "35px", marginRight: "16px" }} />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 600,
+                                    fontSize: "18px",
+                                    lineHeight: "130%",
+                                    letterSpacing: "-1%",
+                                    verticalAlign: "middle",
+                                    color: "white"
+                                }}
+                            >
+                                Drag & drop local files here,
+                                or click to select
+                            </span>
+                        </div>
                         <div
                             id="folder2"
                             style={{
-                                width: "406px",
-                                height: "120px",
+                                width: "358px",
+                                height: "72px",
                                 borderRadius: "20px",
                                 gap: "6px",
-                                backgroundColor: "#242424"
+                                backgroundColor: "#242424",
+                                display: "flex",
+                                alignItems: "center",
+                                padding: "24px"
                             }}
-                        />
+                        >
+                            <img src="/folder2.svg" alt="Folder 2" style={{ width: "35px", height: "35px", marginRight: "16px" }} />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 600,
+                                    fontSize: "18px",
+                                    lineHeight: "130%",
+                                    letterSpacing: "-1%",
+                                    verticalAlign: "middle",
+                                    color: "white"
+                                }}
+                            >
+                                Enter in a public URL:
+                            </span>
+                        </div>
                     </div>
                     <div style={{ display: "flex", gap: "20px" }}>
                         <div
                             id="folder3"
                             style={{
-                                width: "406px",
-                                height: "120px",
+                                width: "358px",
+                                height: "72px",
                                 borderRadius: "20px",
                                 gap: "6px",
-                                backgroundColor: "#242424"
+                                backgroundColor: "#242424",
+                                display: "flex",
+                                alignItems: "center",
+                                padding: "24px"
                             }}
-                        />
+                        >
+                            <img src="/folder3.svg" alt="Folder 3" style={{ width: "35px", height: "35px", marginRight: "16px" }} />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 600,
+                                    fontSize: "18px",
+                                    lineHeight: "130%",
+                                    letterSpacing: "-1%",
+                                    verticalAlign: "middle",
+                                    color: "white"
+                                }}
+                            >
+                                Add files from Dropbox
+                            </span>
+                        </div>
                         <div
                             id="folder4"
                             style={{
-                                width: "406px",
-                                height: "120px",
+                                width: "358px",
+                                height: "72px",
                                 borderRadius: "20px",
                                 gap: "6px",
-                                backgroundColor: "#242424"
+                                backgroundColor: "#242424",
+                                display: "flex",
+                                alignItems: "center",
+                                padding: "24px"
                             }}
-                        />
+                        >
+                            <img src="/folder4.svg" alt="Folder 4" style={{ width: "35px", height: "35px", marginRight: "16px" }} />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 600,
+                                    fontSize: "18px",
+                                    lineHeight: "130%",
+                                    letterSpacing: "-1%",
+                                    verticalAlign: "middle",
+                                    color: "white"
+                                }}
+                            >
+                                Add files from Google Drive
+                            </span>
+                        </div>
                     </div>
                     <div
                         id="upload"
