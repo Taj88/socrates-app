@@ -4,6 +4,11 @@ import { useState } from 'react';
 
 export default function Main() {
     const [hoverVisible, setHoverVisible] = useState(false);
+    const [checked, setChecked] = useState({ checkbox1: false, checkbox2: false });
+
+    const handleCheckboxChange = (checkbox: 'checkbox1' | 'checkbox2') => {
+        setChecked(prevState => ({ ...prevState, [checkbox]: !prevState[checkbox] }));
+    };
 
     return (
         <main
@@ -332,13 +337,131 @@ export default function Main() {
                     <div
                         id="upload"
                         style={{
-                            width: "820px",
-                            height: "62px",
+                            width: "788px",
+                            height: "30px",
                             borderRadius: "34px",
                             gap: "6px",
-                            backgroundColor: "#242424"
+                            padding: "16px",
+                            backgroundColor: "#242424",
+                            display: "flex", // added to place divs side by side
+
                         }}
-                    />
+                    >
+                        <div
+                            style={{
+                                width: "290px",
+                                height: "30px",
+                                borderRadius: "20px",
+                                gap: "8px",
+                                paddingRight: "7px",
+                                paddingLeft: "12px",
+                                backgroundColor: "#2b2b2b",
+                                alignItems: "center",
+                                display: "flex"
+                            }}
+                        >
+                            <img src="/pdf.svg" alt="PDF Icon" style={{ width: "20px", height: "18px" }} />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 400,
+                                    fontSize: "14px",
+                                    lineHeight: "100%",
+                                    letterSpacing: "0%",
+                                    verticalAlign: "middle",
+                                    color: "white"
+                                }}
+                            >
+                                Report_file.pdf
+                            </span>
+                            <input
+                                type="checkbox"
+                                checked={checked.checkbox1}
+                                onChange={() => handleCheckboxChange('checkbox1')}
+                                style={{
+                                    width: "20px",
+                                    height: "20px",
+                                    border: "1px solid #242424",
+                                    marginLeft: "14px",
+                                    backgroundColor: "#363636",
+                                    cursor: "pointer",
+                                    accentColor: "#363636",
+                                    textDecoration: checked.checkbox1 ? "none" : "line-through"
+                                }}
+                            />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 400,
+                                    fontSize: "14px",
+                                    lineHeight: "100%",
+                                    letterSpacing: "0%",
+                                    verticalAlign: "middle",
+                                    color: "#B7B7B7" // added text style
+                                }}
+                            >
+                                Force OCR
+                            </span>
+                            <img src="/tooltip.svg" alt="Tooltip Icon" style={{ width: "20px", height: "18px" }} />
+                        </div>
+                        <div
+                            style={{
+                                width: "290px",
+                                height: "30px",
+                                borderRadius: "20px",
+                                gap: "8px",
+                                paddingRight: "7px",
+                                paddingLeft: "12px",
+                                backgroundColor: "#2b2b2b",
+                                alignItems: "center",
+                                display: "flex"
+                            }}
+                        >
+                            <img src="/doc.svg" alt="Doc Icon" style={{ width: "20px", height: "18px" }} />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 400,
+                                    fontSize: "14px",
+                                    lineHeight: "100%",
+                                    letterSpacing: "0%",
+                                    verticalAlign: "middle",
+                                    color: "white"
+                                }}
+                            >
+                                Article.docs
+                            </span>
+                            <input
+                                type="checkbox"
+                                checked={checked.checkbox2}
+                                onChange={() => handleCheckboxChange('checkbox2')}
+                                style={{
+                                    width: "20px",
+                                    height: "20px",
+                                    border: "1px solid #242424",
+                                    marginLeft: "14px",
+                                    backgroundColor: "#363636",
+                                    cursor: "pointer",
+                                    accentColor: "#363636",
+                                    textDecoration: checked.checkbox2 ? "none" : "line-through"
+                                }}
+                            />
+                            <span
+                                style={{
+                                    fontFamily: "Onest",
+                                    fontWeight: 400,
+                                    fontSize: "14px",
+                                    lineHeight: "100%",
+                                    letterSpacing: "0%",
+                                    verticalAlign: "middle",
+                                    color: "#B7B7B7" // added text style
+                                }}
+                            >
+                                Force OCR
+                            </span>
+                            <img src="/tooltip.svg" alt="Tooltip Icon" style={{ width: "20px", height: "18px" }} />
+                        </div>
+                    </div>
                 </div>
                 <div
                     id="buttons"
