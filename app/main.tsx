@@ -214,19 +214,61 @@ export default function Main() {
                             }}
                         >
                             <img src="/folder2.svg" alt="Folder 2" style={{ width: "35px", height: "35px", marginRight: "16px" }} />
-                            <span
-                                style={{
-                                    fontFamily: "Onest",
-                                    fontWeight: 600,
-                                    fontSize: "18px",
-                                    lineHeight: "130%",
-                                    letterSpacing: "-1%",
-                                    verticalAlign: "middle",
-                                    color: "white"
-                                }}
-                            >
-                                Enter in a public URL:
-                            </span>
+                            <div style={{ display: "flex", flexDirection: "column", position: "relative" }}>
+                                <span
+                                    style={{
+                                        fontFamily: "Onest",
+                                        fontWeight: 600,
+                                        fontSize: "18px",
+                                        lineHeight: "130%",
+                                        letterSpacing: "-1%",
+                                        verticalAlign: "middle",
+                                        color: "white"
+                                    }}
+                                >
+                                    Enter in a public URL:
+                                </span>
+                                <div style={{ display: "flex", alignItems: "center", marginTop: "8px" }}>
+                                    <input
+                                        type="text"
+                                        placeholder="https://example.com/file.pdf"
+                                        style={{
+                                            width: "196px",
+                                            height: "40px",
+                                            borderRadius: "100px",
+                                            justifyContent: "space-between",
+                                            backgroundColor: "#353535",
+                                            color: "white",
+                                            border: "none",
+                                            opacity: 0.6,
+                                            fontFamily: "Onest",
+                                            fontWeight: 400,
+                                            fontSize: "14px",
+                                            lineHeight: "135%",
+                                            letterSpacing: "0%",
+                                            verticalAlign: "middle",
+                                            paddingLeft: "16px", // start typing after 8px
+                                            paddingRight: "68px" // end typing before 4px of the button
+                                        }}
+                                    />
+                                    <button
+                                        style={{
+                                            width: "60px",
+                                            height: "36px",
+                                            borderRadius: "20px",
+                                            gap: "10px",
+                                            backgroundColor: "#FFFFFF26",
+                                            color: "white",
+                                            border: "none",
+                                            cursor: "pointer",
+                                            position: "absolute",
+                                            right: "2px"
+                                        }}
+                                    >
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div style={{ display: "flex", gap: "20px" }}>
@@ -370,6 +412,7 @@ export default function Main() {
                         <img src="/stars.svg" alt="Stars" style={{ width: "20px", height: "20px" }} />
                         Start with Deep Dive
                     </button>
+
                     <button
                         style={{
                             width: "24px",
