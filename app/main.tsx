@@ -12,6 +12,16 @@ export default function Main() {
         setChecked(prevState => ({ ...prevState, [checkbox]: !prevState[checkbox] }));
     };
 
+    const handleStartClick = () => {
+        console.log("Start button clicked");
+        // Add your start button logic here
+    };
+
+    const handleDeepDiveClick = () => {
+        console.log("Start with Deep Dive button clicked");
+        // Add your deep dive button logic here
+    };
+
     return (
         <main className={cn("main-container")}>
             <div id="popup" className="popup">
@@ -104,9 +114,9 @@ export default function Main() {
                     </div>
                 </div>
                 <div id="buttons" className="buttons">
-                    <button className="button start-button">Start</button>
+                    <button className="button start-button" onClick={handleStartClick}>Start</button>
                     <span className="or-text">or</span>
-                    <button className="button deep-dive-button">
+                    <button className="button deep-dive-button" onClick={handleDeepDiveClick}>
                         <img src="/stars.svg" alt="Stars" className="stars-icon" />
                         Start with Deep Dive
                     </button>
