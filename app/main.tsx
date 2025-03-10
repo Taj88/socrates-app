@@ -114,9 +114,9 @@ export default function Main() {
                     </div>
                 </div>
                 <div id="buttons" className="buttons">
-                    <button className="button start-button" onClick={handleStartClick}>Start</button>
+                    <button className=" start-button" onClick={handleStartClick}>Start</button>
                     <span className="or-text">or</span>
-                    <button className="button deep-dive-button" onClick={handleDeepDiveClick}>
+                    <button className=" deep-dive-button" onClick={handleDeepDiveClick}>
                         <img src="/stars.svg" alt="Stars" className="stars-icon" />
                         Start with Deep Dive
                     </button>
