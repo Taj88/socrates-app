@@ -293,6 +293,15 @@
     border: 1px solid #F37F0C;
     background-color: transparent;
     color: white;
+    width: 240px;
+    height: 60px;
+    border-radius: 56px;
+    gap: 10px;
+    font-family: Onest;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .or-text {
@@ -313,6 +322,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 240px;
+    height: 60px;
+    border-radius: 56px;
+    gap: 10px;
+    font-family: Onest;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .stars-icon {
