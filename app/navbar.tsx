@@ -39,7 +39,7 @@ export default function Navbar() {
                             Make the most of all features!
                         </div>
                     </div>
-                    <button className="button">
+                    <button className="button-upgrade">
                         <Image src={buttonsUpgradeIcon} alt="Buttons Upgrade Icon" width={224} height={40} />
                     </button>
                 </div>

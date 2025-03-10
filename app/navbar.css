@@ -49,6 +49,14 @@
     cursor: pointer;
 }
 
+.button-upgrade {
+    width: 224px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .bottom-nav {
     width: 256px;
     height: auto;
