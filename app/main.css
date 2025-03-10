@@ -1,0 +1,361 @@
+.main-container {
+    width: 1440px;
+    height: 900px;
+    border-radius: 32px;
+    padding: 16px;
+    gap: 12px;
+    background-color: #2b2b2b;
+    background-image: url('/HeroPattern.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup {
+    width: auto;
+    height: 28px;
+    border-radius: 100px;
+    gap: 4px;
+    padding: 8px 12px 8px 16px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.popup-text {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin-left: 8px;
+}
+
+.popup-link {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FB9937;
+}
+
+.headline {
+    width: 1076px;
+    height: 624px;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.text {
+    width: 1076px;
+    height: 114px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.headline-text {
+    font-family: Onest;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.cloud-icon {
+    width: 114px;
+    height: 114px;
+}
+
+.subtext {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.subtext-highlight {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: #F37F0C;
+}
+
+.folders {
+    width: 820px;
+    height: 330px;
+    gap: 20px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.folder-row {
+    display: flex;
+    gap: 20px;
+}
+
+.folder {
+    width: 358px;
+    height: 72px;
+    border-radius: 20px;
+    gap: 6px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+}
+
+.folder-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+}
+
+.folder-text {
+    font-family: Onest;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -1%;
+    vertical-align: middle;
+    color: white;
+}
+
+.folder-input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.folder-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.folder-input {
+    width: 196px;
+    height: 40px;
+    border-radius: 100px;
+    justify-content: space-between;
+    background-color: #353535;
+    color: white;
+    border: none;
+    opacity: 0.6;
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-right: 68px;
+}
+
+.folder-button {
+    width: 60px;
+    height: 36px;
+    border-radius: 20px;
+    gap: 10px;
+    background-color: #FFFFFF26;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+}
+
+.upload {
+    width: 788px;
+    height: 30px;
+    border-radius: 34px;
+    gap: 6px;
+    padding: 16px;
+    background-color: #242424;
+    display: flex;
+}
+
+.upload-item {
+    width: 290px;
+    height: 30px;
+    border-radius: 20px;
+    gap: 8px;
+    padding-right: 7px;
+    padding-left: 12px;
+    background-color: #2b2b2b;
+    align-items: center;
+    display: flex;
+}
+
+.upload-icon {
+    width: 20px;
+    height: 18px;
+}
+
+.upload-text {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: white;
+}
+
+.upload-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #242424;
+    margin-left: 14px;
+    background-color: #363636;
+    cursor: pointer;
+    accent-color: #363636;
+}
+
+.upload-ocr {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #B7B7B7;
+}
+
+.tooltip-icon {
+    width: 20px;
+    height: 18px;
+}
+
+.buttons {
+    width: 528px;
+    height: 60px;
+    gap: 16px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    width: 240px;
+    height: 60px;
+    border-radius: 56px;
+    gap: 10px;
+    padding: 17px 32px;
+    font-family: Onest;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.start-button {
+    border: 1px solid #F37F0C;
+    background-color: transparent;
+    color: white;
+}
+
+.or-text {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.deep-dive-button {
+    border: 1px solid #F37F0C;
+    background: linear-gradient(180deg, #FFBF00, #FB9937);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.info-button {
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-family: Onest;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.hover {
+    width: 226px;
+    height: 94px;
+    border-radius: 20px;
+    padding: 12px;
+    gap: 8px;
+    background-color: #1E1E1E;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 1;
+}
+
+.hover-text {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    color: white;
+}
